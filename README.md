@@ -91,7 +91,12 @@ Advanced undergraduate and graduate students in computer science or simulation-b
 ### Resources (updated continuously)
 
 * https://bitbucket.org/VictorEijkhout/hpc-book-and-course/src
-* https://github.com/flame/blislab
+* https://github.com/cucs-hpla/how-to-optimize-gemm
+* https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html
+* http://agner.org/optimize/microarchitecture.pdf
+* http://duartes.org/gustavo/blog/post/intel-cpu-caches/
+* http://duartes.org/gustavo/blog/post/getting-physical-with-memory/
+* https://software.intel.com/sites/landingpage/IntrinsicsGuide/#
 
 ### Disability Accommodations
 
