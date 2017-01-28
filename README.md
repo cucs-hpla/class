@@ -44,7 +44,7 @@ Upon completing this course, students possess an ability to
 
 * 40% class participation and contribution to homework.  There will be about 8 homework assignments that will involve some software development and numerical experiments.
 * 30% final project.  A one-page written proposal is due April 17 and the project (code + write-up) is due on May 10.  I'll help you find a suitable project.
-* Two midterms of 15% each, to be held in-class March 1 and April 5.
+* Two midterms of 15% each, to be held in-class March 6 and April 5.
 
 Assignments will be submitted by pull request on GitHub.  Join the class organization here:
 
