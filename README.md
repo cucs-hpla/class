@@ -12,6 +12,10 @@ Meeting Time: MW 3:0-4:15pm in ECCS 1B14
 * Join via Zoom app (using meeting ID 559824593)
 * Join via phone: 1-646-558-8656 or 1-408-638-0968
 
+#### Gitter discussion forum
+
+https://gitter.im/cucs-hpla/Lobby
+
 #### Instructor
 
 [Jed Brown](https://jedbrown.org), [<tt>jed.brown@colorado.edu</tt>](mailto:jed.brown@colorado.edu), ECOT 621
