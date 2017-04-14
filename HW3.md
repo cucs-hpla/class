@@ -31,15 +31,16 @@ Remember to vary problem size and tests parallel cases (even if only with 2-4 pr
 ### Calibrate in the batch environment
 
 SSH to `login.rc.colorado.edu` and build PETSc on either Janus (old) or Summit (new, has Xeon Phi nodes).
-You will likely need some modules
+You will likely need some modules (this is what I use on summit)
 
 ```
-module load intel/17.0.0 cmake
-. /curc/sw/intel/17.0.0/compilers_and_libraries/linux/bin/compilervars.sh intel64
+module load intel/17.0.0 impi mkl cmake
+export PETSC_DIR=/projects/jeka2967/petsc PETSC_ARCH=summit-opt
 cd petsc
 ```
 
-Feel free to look in `/home/jeka2967/petsc` for a working configuration.
+Feel free to look in `/projects/jeka2967/petsc` for a working configuration.
+You can work in your own clone of the PETSc source tree (it has examples) while using my `PETSC_DIR` and `PETSC_ARCH` or you can make your own configuration.
 You have to use the batch system to run jobs here -- either as a script or interactive session.
 Run `make streams` on a compute node to see memory scalability.
 Run at least one of the inexpensive configurations that you ran on your laptop or workstation.
