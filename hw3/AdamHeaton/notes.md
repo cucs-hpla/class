@@ -2,9 +2,9 @@ Adam Heaton
 Homework #3  
 HPLA
 
-##Part 1
+## Part 1
 
-####ex19:
+#### ex19:
 
 1.  -ksp_type: GMRES -pc_type: ASM
 	* Problem Size: 			500 x 500
@@ -36,7 +36,7 @@ HPLA
 	* Linear Solver itterations:	6, and 7
 	* Logs:				Dominated by VecSet, and other vec arithmetic
 
-####ex48:
+#### ex48:
 
 1. -ksp_type: GCR -pc_type: MG
 	* Problem Size: 			200 x 200
@@ -62,13 +62,13 @@ HPLA
 	* Linear Solver itterations:	94, and 95
 	* Logs:				Dominated by VecScatterBegin, VecSet
 
-##Part2
+## Part2
 
 I experimented with different problem sizes, preconditioners, krylov methods, and examing the log outputs from execution. From the results it seems that using a Multi-Grid preconditioner with the Generalized Conjugate Residual method works well, especially since a lot of the operaitons are spread over many methods or involve low cost ones like VecSet.
 
 I ran experiment 48 on the summit cluster with this configuration:
 
-`./ex48 -pc_type mg -ksp_type gcr -ksp_monitor -ksp_converged_reason -m 200 -n 200 -log_view`
+`./ex48 -pc_type mg -ksp_type gcr -ksp_monitor -ksp_converged_reason -m 200 -n 200 -log_view`  
 `./ex19 -pc_type mg -ksp_type gcr -ksp_monitor -ksp_converged_reason -m 200 -n 200 -log_view`
 
 And varied the dimesnions of the matrix in order to find a suitable problem size that would finish in 5-10 minutes. This turned out to be:
